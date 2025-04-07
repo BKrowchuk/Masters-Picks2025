@@ -735,23 +735,6 @@ function isPoolMemberCut(picks: GolferScore[]): boolean {
   return playersWhoMadeCut < 4;
 }
 
-// Calculate positions for all pool members for a specific round
-function calculateRoundPositions(poolMembers: { id: string; picks: GolferScore[] }[], roundKey: 'round1' | 'round2' | 'round3' | 'round4'): { [key: string]: number } {
-  const roundScores = poolMembers.map(member => ({
-    id: member.id,
-    score: calculateBestFourForRound(member.picks, roundKey)
-  }));
-  
-  roundScores.sort((a, b) => a.score - b.score);
-  
-  const positions: { [key: string]: number } = {};
-  roundScores.forEach((score, index) => {
-    positions[score.id] = index + 1;
-  });
-  
-  return positions;
-}
-
 // Calculate cumulative scores up to a specific round
 function calculateCumulativeScore(picks: GolferScore[], roundKey: 'round1' | 'round2' | 'round3' | 'round4'): number {
   const bestFour = getBestFourPlayers(picks);
@@ -841,28 +824,24 @@ const parseCSV = (csvText: string): Omit<PoolMember, 'bestFourTotal' | 'roundPos
   const poolMembers: Omit<PoolMember, 'bestFourTotal' | 'roundPositions' | 'isCut'>[] = [];
 
   for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
+    const values = lines[i].split(',');
+    if (values.length === headers.length) {
+      const member: Omit<PoolMember, 'bestFourTotal' | 'roundPositions' | 'isCut'> = {
+        id: i.toString(),
+        name: values[0],
+        picks: []
+      };
 
-    const values = line.split(',');
-    const member: Omit<PoolMember, 'bestFourTotal' | 'roundPositions' | 'isCut'> = {
-      id: i.toString(),
-      name: values[0].trim(),
-      picks: []
-    };
-
-    // Process each group selection
-    for (let j = 1; j < values.length; j++) {
-      const golferName = values[j].trim();
-      if (golferName) {
+      for (let j = 1; j < values.length; j++) {
+        const golferName = values[j].trim();
         const golfer = findGolferByName(golferName);
         if (golfer) {
           member.picks.push(golfer);
         }
       }
-    }
 
-    poolMembers.push(member);
+      poolMembers.push(member);
+    }
   }
 
   return poolMembers;

@@ -13,6 +13,19 @@ export interface GolferScore {
   madeCut: boolean;
 }
 
+export interface Player {
+  id: string;
+  name: string;
+  rounds: {
+    round1: number;
+    round2: number;
+    round3: number;
+    round4: number;
+  };
+  total: number;
+  position: number;
+}
+
 export interface PoolMember {
   id: string;
   name: string;

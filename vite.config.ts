@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.csv'],
-  base: '/Master2025-Picks/'
+  base: './'
 })

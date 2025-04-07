@@ -716,12 +716,12 @@ function getBestFourPlayers(picks: GolferScore[]): GolferScore[] {
 }
 
 // Helper function to calculate best four scores for a round
-function calculateBestFourForRound(picks: GolferScore[], roundKey: 'round1' | 'round2' | 'round3' | 'round4'): number {
-  const bestFour = getBestFourPlayers(picks);
-  return bestFour
-    .map(golfer => golfer.rounds[roundKey] || 0)
-    .reduce((sum, score) => sum + score, 0);
-}
+// function calculateBestFourForRound(picks: GolferScore[], roundKey: 'round1' | 'round2' | 'round3' | 'round4'): number {
+//   const bestFour = getBestFourPlayers(picks);
+//   return bestFour
+//     .map(golfer => golfer.rounds[roundKey] || 0)
+//     .reduce((sum, score) => sum + score, 0);
+// }
 
 // Helper function to calculate best four total
 function calculateBestFourTotal(picks: GolferScore[]): number {

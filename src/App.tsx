@@ -57,10 +57,27 @@ const LeaderboardContainer = styled('div')(({ theme }) => ({
 
 const ScrollableContent = styled('div')({
   flex: 1,
+  overflow: 'auto',
   height: 'calc(100% - 60px)', // Subtract search bar height
   padding: '0 8px 0 0',
-  display: 'flex',
-  flexDirection: 'column',
+  '&::-webkit-scrollbar': {
+    width: '8px',
+    height: '8px',
+  },
+  '&::-webkit-scrollbar-track': {
+    background: '#f1f1f1',
+    borderRadius: '4px',
+  },
+  '&::-webkit-scrollbar-thumb': {
+    background: '#006747',
+    borderRadius: '4px',
+    '&:hover': {
+      background: '#005238',
+    },
+  },
+  '&::-webkit-scrollbar-corner': {
+    background: '#f1f1f1',
+  },
 });
 
 function App() {
@@ -112,7 +129,7 @@ function App() {
               sx={{
                 border: '1px solid #e0e0e0',
                 borderRadius: '4px',
-                width: '100%',
+                maxWidth: '100%',
                 height: 'calc(100% - 16px)', // Account for margins
                 margin: '0px 8px',
                 overflow: 'auto',
@@ -144,22 +161,14 @@ function App() {
                 }}
               >
                 <TableHead>
-                  <TableRow sx={{ 
-                    backgroundColor: '#006747',
-                    position: 'sticky',
-                    top: 0,
-                    zIndex: 4,
-                    '& th': {
-                      borderBottom: '2px solid #006747',
-                    }
-                  }}>
+                  <TableRow sx={{ backgroundColor: '#006747' }}>
                     <TableCell sx={{ 
                       fontWeight: 'bold', 
                       color: 'white', 
                       padding: '6px 8px', 
                       position: 'sticky', 
                       left: 0, 
-                      zIndex: 5, 
+                      zIndex: 3, 
                       backgroundColor: '#006747',
                       minWidth: '180px',
                       whiteSpace: 'nowrap',
@@ -174,7 +183,7 @@ function App() {
                         whiteSpace: 'nowrap',
                         position: 'sticky',
                         top: 0,
-                        zIndex: 4,
+                        zIndex: 2,
                         backgroundColor: '#006747',
                       }}>
                         Group {group}

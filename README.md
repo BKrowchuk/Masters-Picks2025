@@ -2,6 +2,26 @@
 
 This document provides a detailed comparison of pool members who have similar picks in the Masters 2025 pool.
 
+## Most Common Picks by Group
+
+| Group | Most Common Pick | Frequency | Other Popular Picks |
+|-------|-----------------|-----------|-------------------|
+| 1 | Scottie Scheffler | 12 | Rory McIlroy (4), Ludvig Aberg (1), Xander Schauffele (1), Colin Morikawa (1) |
+| 2 | Jon Rahm | 8 | Justin Thomas (4), Viktor Hovland (3), Brooks Koepka (2) |
+| 3 | Patrick Cantlay | 4 | Tommy Fleetwood (4), Sepp Straka (3), Keegan Bradley (3), Shane Lowry (2) |
+| 4 | Bryson DeChambeau | 10 | Corey Conners (4), Tyrrell Hatton (2), Billy Horschel (2) |
+| 5 | Min Woo Lee | 6 | Akshay Bhatia (4), Cameron Smith (3), Sahith Theegala (3), Thomas Detry (1) |
+| 6 | Tom Kim | 5 | Aaron Rai (3), Nick Taylor (3), Lucas Glover (2), Patrick Reed (2), J.J. Spaun (2) |
+| 7 | Tony Finau | 11 | Harris English (3), Byeong Hun An (2), Jason Day (1), Sam Burns (1) |
+| 8 | Justin Rose | 7 | Denny McCarthy (4), Max Greyserman (2), Stephen Jaeger (2), Taylor Pendrith (2) |
+| 9 | Brian Harman | 6 | Daniel Berger (4), J.T. Poston (4), Nicolas Echavarria (1), Davis Thompson (1) |
+| 10 | Michael Kim | 7 | Tom Hoge (5), Christiaan Bezuidenhout (2), Rasmus Hojgaard (2), Matthieu Pavon (1) |
+| 11 | Will Zalatoris | 10 | Cameron Young (4), Cameron Davis (2), Joe Highsmith (1) |
+| 12 | Jordon Speith | 9 | Max Homa (3), Matt Fitzpatrick (2), Nicolai Hojgaard (2) |
+| 13 | Joaquin Niemann | 9 | Patton Kizire (2), Rafael Campos (2), Adam Schenk (2), Davis Riley (1) |
+| 14 | Dustin Johnson | 6 | Charl Schwartzel (3), Phil Mickelson (2), Danny Willett (2), Zach Johnson (2), Sergio Garcia (1) |
+| 15 | Bernhard Langer | 5 | Bubba Watson (3), Kevin Yu (2), Justin Hastings (A) (2), Angel Cabrera (2), Vijay Singh (1), Hiroshi Tai (A) (1), Evan Beck (A) (1), Fred Couples (1) |
+
 ## Most Similar Picks
 
 ### 1. Mike Lewis vs Mike Karagias (12/15 picks match)

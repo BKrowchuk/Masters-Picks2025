@@ -2,6 +2,29 @@
 
 This document provides a detailed comparison of pool members who have similar picks in the Masters 2025 pool.
 
+## Pool Statistics
+
+- **Total Pool Members**: 23
+- **Total Unique Players Selected**: 80
+- **Most Popular Picks by Group**:
+  - Group 1: Scottie Scheffler (14 picks)
+  - Group 2: Jon Rahm (10 picks)
+  - Group 3: Patrick Cantlay (6 picks)
+  - Group 4: Bryson DeChambeau (15 picks)
+  - Group 5: Min Woo Lee (6 picks)
+  - Group 6: Tom Kim (6 picks)
+  - Group 7: Tony Finau (15 picks)
+  - Group 8: Justin Rose (11 picks)
+  - Group 9: Brian Harman (10 picks)
+  - Group 10: Tom Hoge (7 picks)
+  - Group 11: Will Zalatoris (15 picks)
+  - Group 12: Jordan Spieth (14 picks)
+  - Group 13: Joaquin Niemann (15 picks)
+  - Group 14: Dustin Johnson (7 picks)
+  - Group 15: Bernhard Langer (6 picks)
+
+## Pool Rules
+
 ## Most Common Picks by Group
 
 | Group | Most Common Pick | Frequency | Other Popular Picks |

@@ -39,4 +39,13 @@ export interface PoolMember {
     current: number;
   };
   isCut: boolean;
+}
+
+export interface Golfer {
+  id: number;
+  name: string;
+  worldRanking: number;
+  country: string;
+  group: number;
+  odds: number;
 } 

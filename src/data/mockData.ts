@@ -2,7 +2,7 @@ import { GolferScore, PoolMember } from '../types';
 import responses from './responses.csv?raw';
 
 export const mockGolfers: GolferScore[] = [
-  // Group 1
+  // Group 1 (Top 5)
   {
     id: '1',
     name: 'Scottie Scheffler',
@@ -39,10 +39,19 @@ export const mockGolfers: GolferScore[] = [
     position: 5,
     madeCut: true
   },
-
-  // Group 2
   {
     id: '5',
+    name: 'Collin Morikawa',
+    group: 1,
+    rounds: { round1: -3, round2: -2, round3: -3, round4: -2 },
+    total: -10,
+    position: 6,
+    madeCut: true
+  },
+
+  // Group 2 (6-15)
+  {
+    id: '6',
     name: 'Jon Rahm',
     group: 2,
     rounds: { round1: -3, round2: -4, round3: -2, round4: -4 },
@@ -51,375 +60,393 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '6',
-    name: 'Viktor Hovland',
-    group: 2,
-    rounds: { round1: -3, round2: -2, round3: -3, round4: -2 },
-    total: -10,
-    position: 6,
-    madeCut: true
-  },
-  {
     id: '7',
     name: 'Justin Thomas',
     group: 2,
     rounds: { round1: -2, round2: -3, round3: -4, round4: -2 },
     total: -11,
-    position: 7,
+    position: 8,
     madeCut: true
   },
   {
     id: '8',
+    name: 'Viktor Hovland',
+    group: 2,
+    rounds: { round1: -3, round2: -2, round3: -3, round4: -2 },
+    total: -10,
+    position: 7,
+    madeCut: true
+  },
+  {
+    id: '9',
     name: 'Brooks Koepka',
     group: 2,
     rounds: { round1: -2, round2: -3, round3: -3, round4: -2 },
     total: -10,
-    position: 8,
-    madeCut: true
-  },
-
-  // Group 3
-  {
-    id: '9',
-    name: 'Patrick Cantlay',
-    group: 3,
-    rounds: { round1: -2, round2: -3, round3: -4, round4: -2 },
-    total: -11,
     position: 9,
     madeCut: true
   },
   {
     id: '10',
-    name: 'Keegan Bradley',
-    group: 3,
-    rounds: { round1: -3, round2: -2, round3: -3, round4: -1 },
-    total: -9,
+    name: 'Russel Henley',
+    group: 2,
+    rounds: { round1: -2, round2: -3, round3: -3, round4: -2 },
+    total: -10,
     position: 10,
     madeCut: true
   },
   {
     id: '11',
-    name: 'Sepp Straka',
+    name: 'Sungjae Im',
+    group: 5,
+    rounds: { round1: -2, round2: -3, round3: -3, round4: -2 },
+    total: -10,
+    position: 11,
+    madeCut: true
+  },
+
+  // Group 3 (16-30)
+  {
+    id: '12',
+    name: 'Patrick Cantlay',
     group: 3,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
-    total: -8,
+    rounds: { round1: -2, round2: -3, round3: -4, round4: -2 },
+    total: -11,
+    position: 10,
+    madeCut: true
+  },
+  {
+    id: '13',
+    name: 'Keegan Bradley',
+    group: 3,
+    rounds: { round1: -3, round2: -2, round3: -3, round4: -1 },
+    total: -9,
     position: 11,
     madeCut: true
   },
   {
-    id: '12',
-    name: 'Tommy Fleetwood',
+    id: '14',
+    name: 'Sepp Straka',
     group: 3,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 12,
     madeCut: true
   },
   {
-    id: '13',
-    name: 'Shane Lowry',
+    id: '15',
+    name: 'Tommy Fleetwood',
     group: 3,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 13,
     madeCut: true
   },
-
-  // Group 4
   {
-    id: '14',
+    id: '16',
+    name: 'Shane Lowry',
+    group: 3,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    total: -8,
+    position: 14,
+    madeCut: true
+  },
+
+  // Group 4 (31-50)
+  {
+    id: '17',
     name: 'Bryson DeChambeau',
     group: 4,
     rounds: { round1: -3, round2: -2, round3: -3, round4: -1 },
     total: -9,
-    position: 14,
-    madeCut: true
-  },
-  {
-    id: '15',
-    name: 'Tyrrell Hatton',
-    group: 4,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
-    total: -8,
     position: 15,
     madeCut: true
   },
   {
-    id: '16',
-    name: 'Corey Conners',
+    id: '18',
+    name: 'Tyrrell Hatton',
     group: 4,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 16,
     madeCut: true
   },
   {
-    id: '17',
-    name: 'Billy Horschel',
+    id: '19',
+    name: 'Corey Conners',
     group: 4,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 17,
     madeCut: true
   },
-
-  // Group 5
   {
-    id: '18',
-    name: 'Min Woo Lee',
-    group: 5,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '20',
+    name: 'Billy Horschel',
+    group: 4,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 18,
     madeCut: true
   },
+
+  // Group 5 (51-75)
   {
-    id: '19',
-    name: 'Akshay Bhatia',
+    id: '21',
+    name: 'Min Woo Lee',
     group: 5,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 19,
     madeCut: true
   },
   {
-    id: '20',
-    name: 'Thomas Detry',
+    id: '22',
+    name: 'Akshay Bhatia',
     group: 5,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 20,
     madeCut: true
   },
   {
-    id: '21',
-    name: 'Cameron Smith',
+    id: '23',
+    name: 'Thomas Detry',
     group: 5,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 21,
     madeCut: true
   },
   {
-    id: '22',
-    name: 'Sahith Theegala',
+    id: '24',
+    name: 'Cameron Smith',
     group: 5,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 22,
     madeCut: true
   },
-
-  // Group 6
   {
-    id: '23',
-    name: 'Tom Kim',
-    group: 6,
+    id: '25',
+    name: 'Sahith Theegala',
+    group: 5,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 23,
     madeCut: true
   },
+
+  // Group 6 (76-100)
   {
-    id: '24',
-    name: 'Nick Taylor',
+    id: '26',
+    name: 'Tom Kim',
     group: 6,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 24,
     madeCut: true
   },
   {
-    id: '25',
-    name: 'Aaron Rai',
+    id: '27',
+    name: 'Nick Taylor',
     group: 6,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 25,
     madeCut: true
   },
   {
-    id: '26',
-    name: 'Lucas Glover',
+    id: '28',
+    name: 'Aaron Rai',
     group: 6,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 26,
     madeCut: true
   },
   {
-    id: '27',
-    name: 'J.J. Spaun',
+    id: '29',
+    name: 'Lucas Glover',
     group: 6,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 27,
     madeCut: true
   },
   {
-    id: '28',
-    name: 'Patrick Reed',
+    id: '30',
+    name: 'J.J. Spaun',
     group: 6,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 28,
     madeCut: true
   },
-
-  // Group 7
   {
-    id: '29',
-    name: 'Tony Finau',
-    group: 7,
+    id: '31',
+    name: 'Patrick Reed',
+    group: 6,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 29,
     madeCut: true
   },
+
+  // Group 7 (101-125)
   {
-    id: '30',
-    name: 'Byeong Hun An',
+    id: '32',
+    name: 'Tony Finau',
     group: 7,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 30,
     madeCut: true
   },
   {
-    id: '31',
-    name: 'Jason Day',
+    id: '33',
+    name: 'Byeong Hun An',
     group: 7,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 31,
     madeCut: true
   },
   {
-    id: '32',
-    name: 'Harris English',
+    id: '34',
+    name: 'Jason Day',
     group: 7,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 32,
     madeCut: true
   },
   {
-    id: '33',
-    name: 'Sam Burns',
+    id: '35',
+    name: 'Harris English',
     group: 7,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 33,
     madeCut: true
   },
-
-  // Group 8
   {
-    id: '34',
-    name: 'Justin Rose',
-    group: 8,
+    id: '36',
+    name: 'Sam Burns',
+    group: 7,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 34,
     madeCut: true
   },
   {
-    id: '35',
-    name: 'Stephen Jaeger',
+    id: '37',
+    name: 'Adam Scott',
+    group: 7,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    total: -8,
+    position: 35,
+    madeCut: true
+  },
+
+  // Group 8 (126-150)
+  {
+    id: '38',
+    name: 'Justin Rose',
     group: 8,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 35,
     madeCut: true
   },
   {
-    id: '36',
-    name: 'Denny McCarthy',
+    id: '39',
+    name: 'Stephen Jaeger',
     group: 8,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 36,
     madeCut: true
   },
   {
-    id: '37',
-    name: 'Max Greyserman',
+    id: '40',
+    name: 'Denny McCarthy',
     group: 8,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 37,
     madeCut: true
   },
   {
-    id: '38',
-    name: 'Taylor Pendrith',
+    id: '41',
+    name: 'Max Greyserman',
     group: 8,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 38,
     madeCut: true
   },
-
-  // Group 9
   {
-    id: '39',
-    name: 'Brian Harman',
-    group: 9,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '42',
+    name: 'Taylor Pendrith',
+    group: 8,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 39,
     madeCut: true
   },
+
+  // Group 9 (151-175)
   {
-    id: '40',
-    name: 'J.T. Poston',
+    id: '43',
+    name: 'Brian Harman',
     group: 9,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 40,
     madeCut: true
   },
   {
-    id: '41',
-    name: 'Daniel Berger',
+    id: '44',
+    name: 'J.T. Poston',
     group: 9,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 41,
     madeCut: true
   },
   {
-    id: '42',
-    name: 'Nicolas Echavarria',
+    id: '45',
+    name: 'Daniel Berger',
     group: 9,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 42,
     madeCut: true
   },
-
-  // Group 10
   {
-    id: '43',
-    name: 'Tom Hoge',
-    group: 10,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '46',
+    name: 'Nicolas Echavarria',
+    group: 9,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 43,
     madeCut: true
   },
   {
-    id: '44',
-    name: 'Rasmus Hojgaard',
-    group: 10,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    id: '47',
+    name: 'Davis Thompson',
+    group: 9,
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 44,
     madeCut: true
   },
+
+  // Group 10 (176-200)
   {
-    id: '45',
-    name: 'Christiaan Bezuidenhout',
+    id: '48',
+    name: 'Tom Hoge',
     group: 10,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -427,8 +454,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '46',
-    name: 'Michael Kim',
+    id: '49',
+    name: 'Rasmus Hojgaard',
     group: 10,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -436,37 +463,37 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '47',
-    name: 'Matthieu Pavon',
+    id: '50',
+    name: 'Christiaan Bezuidenhout',
     group: 10,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 47,
     madeCut: true
   },
-
-  // Group 11
   {
-    id: '48',
-    name: 'Will Zalatoris',
-    group: 11,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '51',
+    name: 'Michael Kim',
+    group: 10,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 48,
     madeCut: true
   },
   {
-    id: '49',
-    name: 'Cameron Young',
-    group: 11,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    id: '52',
+    name: 'Matthieu Pavon',
+    group: 10,
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 49,
     madeCut: true
   },
+
+  // Group 11 (201-225)
   {
-    id: '50',
-    name: 'Joe Highsmith',
+    id: '53',
+    name: 'Will Zalatoris',
     group: 11,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -474,37 +501,37 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '51',
-    name: 'Cameron Davis',
+    id: '54',
+    name: 'Cameron Young',
     group: 11,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 51,
     madeCut: true
   },
-
-  // Group 12
   {
-    id: '52',
-    name: 'Jordon Speith',
-    group: 12,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    id: '55',
+    name: 'Joe Highsmith',
+    group: 11,
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 52,
     madeCut: true
   },
   {
-    id: '53',
-    name: 'Max Homa',
-    group: 12,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '56',
+    name: 'Cameron Davis',
+    group: 11,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 53,
     madeCut: true
   },
+
+  // Group 12 (226-250)
   {
-    id: '54',
-    name: 'Nicolai Hojgaard',
+    id: '57',
+    name: 'Jordan Spieth',
     group: 12,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -512,37 +539,37 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '55',
-    name: 'Matt Fitzpatrick',
+    id: '58',
+    name: 'Max Homa',
     group: 12,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 55,
     madeCut: true
   },
-
-  // Group 13
   {
-    id: '56',
-    name: 'Joaquin Niemann',
-    group: 13,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '59',
+    name: 'Nicolai Hojgaard',
+    group: 12,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 56,
     madeCut: true
   },
   {
-    id: '57',
-    name: 'Rafael Campos',
-    group: 13,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    id: '60',
+    name: 'Matt Fitzpatrick',
+    group: 12,
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 57,
     madeCut: true
   },
+
+  // Group 13 (251-275)
   {
-    id: '58',
-    name: 'Patton Kizire',
+    id: '61',
+    name: 'Joaquin Niemann',
     group: 13,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -550,8 +577,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '59',
-    name: 'Adam Schenk',
+    id: '62',
+    name: 'Rafael Campos',
     group: 13,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -559,37 +586,37 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '60',
-    name: 'Davis Riley',
+    id: '63',
+    name: 'Patton Kizire',
     group: 13,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 60,
     madeCut: true
   },
-
-  // Group 14
   {
-    id: '61',
-    name: 'Phil Mickelson',
-    group: 14,
-    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    id: '64',
+    name: 'Adam Schenk',
+    group: 13,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 61,
     madeCut: true
   },
   {
-    id: '62',
-    name: 'Charl Schwartzel',
-    group: 14,
-    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    id: '65',
+    name: 'Davis Riley',
+    group: 13,
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 62,
     madeCut: true
   },
+
+  // Group 14 (276-300)
   {
-    id: '63',
-    name: 'Zach Johnson',
+    id: '66',
+    name: 'Phil Mickelson',
     group: 14,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -597,8 +624,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '64',
-    name: 'Dustin Johnson',
+    id: '67',
+    name: 'Charl Schwartzel',
     group: 14,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -606,8 +633,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '65',
-    name: 'Danny Willett',
+    id: '68',
+    name: 'Zach Johnson',
     group: 14,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -615,37 +642,37 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '66',
-    name: 'Sergio Garcia',
+    id: '69',
+    name: 'Dustin Johnson',
     group: 14,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 66,
     madeCut: true
   },
-
-  // Group 15
   {
-    id: '67',
-    name: 'Vijay Singh',
-    group: 15,
+    id: '70',
+    name: 'Danny Willett',
+    group: 14,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 67,
     madeCut: true
   },
   {
-    id: '68',
-    name: 'Bernhard Langer',
-    group: 15,
+    id: '71',
+    name: 'Sergio Garcia',
+    group: 14,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
     position: 68,
     madeCut: true
   },
+
+  // Group 15 (301+)
   {
-    id: '69',
-    name: 'Justin Hastings (A)',
+    id: '72',
+    name: 'Vijay Singh',
     group: 15,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -653,8 +680,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '70',
-    name: 'Bubba Watson',
+    id: '73',
+    name: 'Bernhard Langer',
     group: 15,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -662,8 +689,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '71',
-    name: 'Kevin Yu',
+    id: '74',
+    name: 'Justin Hastings (A)',
     group: 15,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -671,8 +698,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '72',
-    name: 'Angel Cabrera',
+    id: '75',
+    name: 'Bubba Watson',
     group: 15,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -680,8 +707,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '73',
-    name: 'Hiroshi Tai (A)',
+    id: '76',
+    name: 'Kevin Yu',
     group: 15,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
@@ -689,8 +716,8 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '74',
-    name: 'Evan Beck (A)',
+    id: '77',
+    name: 'Angel Cabrera',
     group: 15,
     rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
     total: -8,
@@ -698,12 +725,30 @@ export const mockGolfers: GolferScore[] = [
     madeCut: true
   },
   {
-    id: '75',
-    name: 'Fred Couples',
+    id: '78',
+    name: 'Hiroshi Tai (A)',
     group: 15,
     rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
     total: -8,
     position: 75,
+    madeCut: true
+  },
+  {
+    id: '79',
+    name: 'Evan Beck (A)',
+    group: 15,
+    rounds: { round1: -2, round2: -3, round3: -2, round4: -1 },
+    total: -8,
+    position: 76,
+    madeCut: true
+  },
+  {
+    id: '80',
+    name: 'Fred Couples',
+    group: 15,
+    rounds: { round1: -3, round2: -2, round3: -2, round4: -1 },
+    total: -8,
+    position: 77,
     madeCut: true
   }
 ];
